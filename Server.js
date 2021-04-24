@@ -12,7 +12,7 @@ Grid.mongo = mongoose.mongo;
 
 //app config
 const app = express();
-const port =  5000;
+const port = process.env.PORT || 5000;
 const mongoURI = "mongodb+srv://Admin:12345@cluster0.daocp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
